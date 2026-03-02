@@ -47,4 +47,4 @@ Além de servir como apresentação profissional, este projeto representa minha 
 
 ![Print do antes pt2](img/print_portfolio_antigo2.png)
 
-![Print do antes pt3](img/print_portfolio_antiga3.png)
+![Print do antes pt3](img/print_portfolio_antigo3.png)
