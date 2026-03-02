@@ -29,28 +29,28 @@ img {
 
 /* Linhas horizontais que estão em algumas partes da página, ajuda no visual */
 .hr-l {
-  border-bottom: solid 2px #000;
+  border: solid 1px #000;
   width: 80%;
   justify-self: center;
   margin: 0 5px;
 }
 
 .hr-center {
-  border-bottom: solid 2px #00000098;
+  border: solid 1px #00000098;
   width: 30%;
   justify-self: center;
 }
 
 .hr-p--right {
   display: flex;
-  border-bottom: solid 2px #000;
+  border: solid 1px #00000098;
   width: 20%;
   align-self: flex-end;
   margin: 0 5px;
 }
 
 .hr-p--left {
-  border-bottom: solid 2px #000;
+  border: solid 1px #00000098;
   width: 20%;
   margin: 0 5px;
 }
