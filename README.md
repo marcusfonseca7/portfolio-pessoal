@@ -40,3 +40,11 @@ Com a evolução dos meus conhecimentos em desenvolvimento web, estou reformulan
 ## 💡 Propósito
 
 Além de servir como apresentação profissional, este projeto representa minha evolução como desenvolvedor e meu compromisso com aprendizado contínuo e boas práticas.
+
+## 🤔 Como estava antes??
+
+![Print do antes pt1](img/print_portfolio_antigo.png)
+
+![Print do antes pt2](img/print_portfolio_antigo2.png)
+
+![Print do antes pt3](img/print_portfolio_antig3.png)
