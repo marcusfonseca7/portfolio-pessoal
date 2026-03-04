@@ -566,18 +566,18 @@ img {
   font-size: 30px;
 }
 
-.contact__icons {
-  width: 25px;
-  display: flex;
-  align-items: center;
-}
-
 .contact__text {
   font-size: 19px;
   display: flex;
-  flex-direction: column;
   gap: 15px;
   padding: 0 35px 35px;
+  justify-content: center;
+}
+
+.contact__icons {
+  width: 50px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1100px) {
