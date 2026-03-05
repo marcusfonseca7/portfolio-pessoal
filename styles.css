@@ -15,7 +15,7 @@ body {
   text-align: center;
   background-image: linear-gradient(to right, #f2fdfc, #fff);
 
-  /* background-image: linear-gradient(to right, #000428, #004e92); Cor que quero*/ 
+  /* background-image: linear-gradient(to right, #000428, #004e92); Cor que quero*/
 }
 
 a {
@@ -165,7 +165,7 @@ iframe {
   align-items: center;
   justify-content: center;
   gap: 10px;
-max-width: 450px;
+  max-width: 450px;
 }
 
 .resume__description {
@@ -318,7 +318,6 @@ max-width: 450px;
   }
 } */
 
-
 /* ABOUT ME */
 
 .about-me__ {
@@ -327,7 +326,7 @@ max-width: 450px;
 }
 
 .about-me__title {
-  padding: 25px 25px 15px 25px;
+  padding: 15px 0 10px 0;
   font-weight: 700;
   font-size: 30px;
 }
@@ -395,7 +394,6 @@ max-width: 450px;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
-  gap: 10px;
 }
 
 .projects__project-reverse {
@@ -419,6 +417,11 @@ max-width: 450px;
   border-radius: 10px;
 }
 
+.projects__iframe-project {
+  width: 500px;
+  height: 337px;
+}
+
 .projects__description {
   display: flex;
   flex-direction: column;
@@ -428,6 +431,7 @@ max-width: 450px;
   gap: 10px;
   text-align: justify;
   font-size: 19px;
+  max-width: 450px;
 }
 
 .projects__buttons {
