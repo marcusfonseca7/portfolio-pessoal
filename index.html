@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porfólio Pessoal</title>
 
+    <!-- Adição da fonte - Roboto -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,14 +17,17 @@
   <body>
     <!-- HEADER/NAV -->
     <header class="header__">
-      <p class="header__text">Marcus Fonseca</p>
-      <ul class="header__list">
-        <li><a href="#home">Início</a></li>
-        <li><a href="#about-me">Sobre</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
+      <nav>
+        <p class="header__text">Marcus Fonseca</p>
+        <ul class="header__list">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about-me">Sobre</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
     </header>
+
     <!-- RESUME  -->
     <main>
       <section id="home" class="resume__">
@@ -34,7 +38,8 @@
         <div class="resume__text">
           <h1 class="resume__title">Desenvolvedor Full-Stack</h1>
           <p class="resume__description">
-            Desenvolvedor em início de carreira apaixonado por tecnologia e desenvolvimento web.
+            Desenvolvedor em início de carreira apaixonado por tecnologia e
+            desenvolvimento web.
           </p>
 
           <div class="resume__buttons">
@@ -160,6 +165,7 @@
           </div>
 
           <hr class="hr-p--left" />
+
           <div class="projects__project-reverse">
             <img
               class="projects__image-project"
@@ -267,6 +273,7 @@
       <div class="foot__">&copy; 2026 Marcus Fonseca. Direitos Reservados</div>
     </footer>
 
+    <!-- Conexão do arquivo com o JavaScript -->
     <script src="./script.js"></script>
   </body>
 </html>
