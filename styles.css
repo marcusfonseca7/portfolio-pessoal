@@ -8,10 +8,6 @@
   scroll-margin-top: 40px;
 }
 
-html {
-  min-height: 100svh;
-  min-width: 100svw;
-}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -95,7 +91,7 @@ iframe {
   height: 10svh;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 55px 0 0;
+  padding-right: 50px;
   gap: 50px;
   list-style: none;
   font-weight: 600;
@@ -126,8 +122,6 @@ iframe {
 /* SEÇÃO HERO */
 
 .hero__ {
-  --_shade: hsla(0, 0%, 100%, 0.719);
-
   display: flex;
   justify-content: space-evenly;
 }
@@ -343,6 +337,12 @@ iframe {
   font-size: 1.1rem;
   text-align: justify;
   padding: 10px 25px;
+  gap: 15px;
+}
+
+.about-me__technologies{
+  list-style: none;
+  display: flex;
   gap: 15px;
 }
 
