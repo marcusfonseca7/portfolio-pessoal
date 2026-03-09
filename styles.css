@@ -8,10 +8,16 @@
   scroll-margin-top: 40px;
 }
 
+html {
+  min-height: 100svh;
+  min-width: 100svw;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #000;
   min-height: 100svh;
+  min-width: 100svw;
   text-align: center;
   background-image: linear-gradient(to right, #f2fdfc, #fff);
 
@@ -102,8 +108,8 @@ iframe {
 
 .header__text {
   padding: 0 0 0 50px;
-  font-weight: 700;
-  font-size: 27px;
+  font-weight: 600;
+  font-size: 1.8rem;
 }
 
 .header__list {
@@ -169,12 +175,12 @@ iframe {
 }
 
 .resume__description {
-  font-size: 19px;
+  font-size: 1.2rem;
   text-align: center;
 }
 
 .resume__title {
-  font-size: 33px;
+  font-size: 2.4rem;
 }
 
 .resume__buttons {
@@ -194,7 +200,7 @@ iframe {
   align-items: center;
   padding: 5px;
   gap: 7px;
-  font-size: 15px;
+  font-size: 1rem;
   background-color: white;
   margin: 3px;
   font-weight: 700;
@@ -213,6 +219,14 @@ iframe {
 .resume__buttons--icon {
   width: 23px;
   height: 23px;
+}
+
+@media (max-width: 760px) {
+  .resume__ {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* @media (max-width: 1100px) {
@@ -330,13 +344,13 @@ iframe {
 .about-me__title {
   padding: 15px 0 10px 0;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .about-me__text {
   display: flex;
   flex-direction: column;
-  font-size: 17px;
+  font-size: 1.1rem;
   text-align: justify;
   padding: 10px 25px;
   gap: 15px;
@@ -411,7 +425,7 @@ iframe {
   text-align: center;
   padding: 25px 0 20px 0;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .projects__image-project {
@@ -432,7 +446,7 @@ iframe {
   padding: 15px;
   gap: 10px;
   text-align: justify;
-  font-size: 19px;
+  font-size: 1.1rem;
   max-width: 450px;
 }
 
@@ -445,7 +459,7 @@ iframe {
 }
 
 .projects__buttons--button {
-  font-size: 15px;
+  font-size: 1rem;
   background-color: white;
   margin: 3px;
   font-weight: 700;
@@ -466,7 +480,7 @@ iframe {
   padding: 0px 0px 15px 0px;
   gap: 10px;
   align-self: start;
-  font-size: 25px;
+  font-size: 1.8rem;
   text-align: start;
 }
 
@@ -474,7 +488,7 @@ iframe {
   padding: 0px 0px 15px 0px;
   gap: 10px;
   align-self: flex-end;
-  font-size: 25px;
+  font-size: 1.8rem;
 }
 
 /* @media (max-width: 1100px) {
@@ -578,14 +592,13 @@ iframe {
 .contact__title {
   padding: 25px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .contact__text {
-  font-size: 19px;
   display: flex;
   gap: 15px;
-  padding: 0 35px 35px;
+  margin-bottom: 30px;
   justify-content: center;
 }
 
@@ -637,5 +650,5 @@ iframe {
   padding: 15px;
   justify-self: center;
   color: #00000098;
-  font-size: 15px;
+  font-size: 1rem;
 }
