@@ -447,15 +447,16 @@ iframe {
   font-weight: 700;
   border: solid 2px #000;
   align-self: start;
-  padding: 3px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .projects__buttons--button:hover {
   color: #fff;
   background-color: hsla(0, 0%, 0%, 0.89);
   transition: background-color ease 300ms;
-  transform: scale(110%);
-  transition: transform ease 300ms;
+  transform: scale(105%);
+  transition: transform ease 200ms;
 }
 
 .projects__description--title {
@@ -548,6 +549,11 @@ iframe {
   width: 50px;
   display: flex;
   align-items: center;
+}
+
+.contact__icons:hover {
+  transform: scale(120%);
+  transition: transform ease 200ms;
 }
 
 /* @media (max-width: 1100px) {
