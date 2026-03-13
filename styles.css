@@ -70,7 +70,7 @@ iframe {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 2px #000;
+  border-bottom: solid 4px #000;
   width: 100%;
   justify-self: center;
   position: sticky;
@@ -129,6 +129,7 @@ iframe {
   width: 370px;
   height: 370px;
   border-radius: 1000px;
+  border: solid 10px ;
 }
 
 .hero__text {
@@ -321,6 +322,8 @@ iframe {
   padding: 0 0 25px 0;
   width: 90%;
   justify-self: center;
+  max-width: 900px;
+  text-align: center;
 }
 
 .about-me__title {
@@ -332,10 +335,14 @@ iframe {
 .about-me__text {
   display: flex;
   flex-direction: column;
-  font-size: 1.1rem;
-  text-align: justify;
+  font-size: 1.2rem;
   padding: 10px 25px;
   gap: 15px;
+}
+
+.about-me__text h4{
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 /* @media (max-width: 1100px) {
