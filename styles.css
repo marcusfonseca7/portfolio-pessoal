@@ -10,13 +10,13 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #000;
+  color: #F9F9F9;
   min-height: 100svh;
   min-width: 100svw;
   text-align: center;
-  background-image: linear-gradient(to right, #f2fdfc, #fff);
+  /* background-color: #13131F; */
 
-  /* background-image: linear-gradient(to right, #000428, #004e92); Cor que quero*/
+  background-image: linear-gradient(to right, #13131F, #000428);
 }
 
 a {
@@ -37,28 +37,28 @@ iframe {
 
 /* Linhas horizontais que estão em algumas partes da página, ajuda no visual */
 .hr-l {
-  border: solid 1px #000;
+  border: solid 1px #00109c;
   width: 80%;
   justify-self: center;
   margin: 0 5px;
 }
 
 .hr-center {
-  border: solid 1px #00000098;
+  border: solid 1px #00109c;
   width: 30%;
   justify-self: center;
 }
 
 .hr-p--right {
   display: flex;
-  border: solid 1px #00000098;
+  border: solid 1px #00109c;
   width: 20%;
   align-self: flex-end;
   margin: 0 5px;
 }
 
 .hr-p--left {
-  border: solid 1px #00000098;
+  border: solid 1px #00109c;
   width: 20%;
   margin: 0 5px;
 }
@@ -68,21 +68,16 @@ iframe {
 .header__ {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
-  border-bottom: solid 4px #000;
+  border-bottom: solid 4px #00109c;
+  margin-bottom: 15px;
+  background-image: linear-gradient(to right, #13131F, #000428);
   width: 100%;
   justify-self: center;
   position: sticky;
   top: 0;
-  background-color: #fff;
   z-index: 1000;
-}
-
-.header__text {
-  padding-left: 50px;
-  font-weight: 600;
-  font-size: 1.8rem;
 }
 
 .header__list {
@@ -126,10 +121,10 @@ iframe {
 }
 
 .hero__img img {
-  width: 370px;
-  height: 370px;
+  width: 350px;
+  height: 350px;
   border-radius: 1000px;
-  border: solid 10px ;
+  border: solid 5px #00109c;
 }
 
 .hero__text {
@@ -165,19 +160,17 @@ iframe {
 .hero__buttons--button {
   display: flex;
   align-items: center;
-  padding: 5px;
-  gap: 7px;
-  font-size: 1rem;
-  background-color: white;
-  margin: 3px;
-  font-weight: 700;
-  border: solid 2px #000;
-  border-radius: 5px;
+  padding: 7px 15px;
+  gap: 10px;
+  font-size: .9rem;
+  font-weight: 600;
+  border: solid 2px #00109c;
+  border-radius: 20px;
 }
 
 .hero__buttons--button:hover {
   color: #fff;
-  background-color: #000;
+  background-color: #00109c;
   transition: background-color ease 300ms;
   transform: scale(110%);
   transition: transform ease 300ms;
@@ -212,113 +205,11 @@ iframe {
   }
 }
 
-/* @media (max-width: 1100px) {
-  .resume__buttons--button {
-    font-size: 1.6vw;
-  }
-  .resume__title {
-    font-size: 3vw;
-  }
-  .resume__img {
-    width: 25vw;
-    height: 25vw;
-  }
-  .resume__description {
-    font-size: 1.8vw;
-  }
-} 
-
-@media (max-width: 880px) {
-  .resume__ {
-    gap: 25px;
-  }
-
-  .resume__buttons--button {
-    font-size: 1.5vw;
-  }
-
-  .resume__buttons--icon {
-    width: 1.7vw;
-    height: 1.7vw;
-  }
-
-  .resume__title {
-    font-size: 2.5vw;
-  }
-
-  .resume__img {
-    width: 25vw;
-    height: 25vw;
-  }
-
-  .resume__description {
-    font-size: 1.7vw;
-  }
-}
-
-@media (max-width: 768px) {
-  .resume__ {
-    gap: 25px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .resume__buttons--button {
-    font-size: 15px;
-  }
-
-  .resume__buttons--icon {
-    width: 15px;
-    height: 15px;
-  }
-
-  .resume__title {
-    font-size: 22px;
-  }
-
-  .resume__img {
-    width: 207px;
-    height: 207px;
-  }
-
-  .resume__description {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 550px) {
-  .resume__ {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .resume__buttons--button {
-    font-size: 15px;
-  }
-
-  .resume__buttons--icon {
-    width: 15px;
-    height: 15px;
-  }
-
-  .resume__title {
-    font-size: 22px;
-  }
-
-  .resume__img {
-    width: 207px;
-    height: 207px;
-  }
-
-  .resume__description {
-    font-size: 14px;
-  }
-} */
 
 /* ABOUT ME */
 
 .about-me__ {
-  border-bottom: solid 2px #000;
+  border-bottom: solid 2px #00109c;
   padding: 0 0 25px 0;
   width: 90%;
   justify-self: center;
@@ -385,7 +276,7 @@ iframe {
   flex-direction: column;
   gap: 15px;
   padding: 0px 0px 10px 0px;
-  border-bottom: solid 2px #000;
+  border-bottom: solid 2px #00109c;
 }
 
 .projects__container {
@@ -448,19 +339,18 @@ iframe {
 }
 
 .projects__buttons--button {
-  font-size: 1rem;
-  background-color: white;
-  margin: 3px;
-  font-weight: 700;
-  border: solid 2px #000;
   align-self: start;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 7px 15px;
+  gap: 10px;
+  font-size: .9rem;
+  font-weight: 600;
+  border: solid 2px #00109c;
+  border-radius: 20px;
 }
 
 .projects__buttons--button:hover {
-  color: #fff;
-  background-color: hsla(0, 0%, 0%, 0.89);
+   color: #fff;
+  background-color: #00109c;
   transition: background-color ease 300ms;
   transform: scale(105%);
   transition: transform ease 200ms;
@@ -604,6 +494,6 @@ iframe {
 .foot__ {
   padding: 15px;
   justify-self: center;
-  color: #00000098;
+  color: #ffffff7e;
   font-size: 1rem;
 }
