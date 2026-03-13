@@ -12,7 +12,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #F9F9F9;
   min-height: 100svh;
-  min-width: 100svw;
+  min-width: 98svw;
   text-align: center;
   /* background-color: #13131F; */
 
@@ -73,7 +73,7 @@ iframe {
   border-bottom: solid 4px #00109c;
   margin-bottom: 15px;
   background-image: linear-gradient(to right, #13131F, #000428);
-  width: 100%;
+  width: 98%;
   justify-self: center;
   position: sticky;
   top: 0;
@@ -326,7 +326,7 @@ iframe {
   justify-content: center;
   padding: 15px;
   gap: 10px;
-  text-align: justify;
+  text-align: start;
   font-size: 1.1rem;
   max-width: 450px;
 }
@@ -451,7 +451,7 @@ iframe {
 
 .contact__icons:hover {
   transform: scale(120%);
-  transition: transform ease 200ms;
+  transition: transform ease 300ms;
 }
 
 /* FOOT */
