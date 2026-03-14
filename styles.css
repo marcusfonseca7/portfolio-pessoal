@@ -304,9 +304,10 @@ iframe {
 
 .projects__title {
   text-align: center;
-  padding: 25px 0 20px 0;
+  padding-top: 25px;
+  padding-bottom: 5px;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 .projects__image-project {
@@ -366,7 +367,7 @@ iframe {
 }
 
 .projects__description--title-reverse {
-  padding-bottom: 0px 0px 0px;
+  padding-bottom: 5px;
   gap: 10px;
   align-self: flex-end;
   font-size: 1.8rem;
