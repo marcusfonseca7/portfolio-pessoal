@@ -33,6 +33,7 @@ img {
 
 iframe {
   margin: 10px;
+  border: none;
 }
 
 /* Linhas horizontais que estão em algumas partes da página, ajuda no visual */
@@ -235,6 +236,17 @@ iframe {
 .about-me__text h4{
   text-align: center;
   font-size: 1.4rem;
+}
+
+.about-me__text--tecnologies{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me__text--tecnologies img{
+  width: 90px;
+  height: 90px;
 }
 
 /* @media (max-width: 1100px) {
