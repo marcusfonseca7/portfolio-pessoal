@@ -10,7 +10,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #F9F9F9;
+  color: #f9f9f9;
   min-height: 100svh;
   min-width: 98svw;
   text-align: center;
@@ -89,6 +89,7 @@ iframe {
   gap: 50px;
   list-style: none;
   font-weight: 600;
+  color: #fff;
 }
 
 @media (max-width: 720px) {
@@ -171,7 +172,7 @@ iframe {
 }
 
 .hero__buttons--button:hover {
-  color: #fff;
+  color: #f9f9f9de;
   background-color: #00109c;
   transition: background-color ease 300ms;
   transform: scale(110%);
@@ -213,10 +214,11 @@ iframe {
 .about-me__ {
   border-bottom: solid 2px #00109c;
   padding: 0 0 25px 0;
-  width: 90%;
+  width: 100%;
   justify-self: center;
-  max-width: 900px;
   text-align: center;
+  color: #f9f9f9de;
+  justify-items: center;
 }
 
 .about-me__title {
@@ -231,22 +233,41 @@ iframe {
   font-size: 1.2rem;
   padding: 10px 25px;
   gap: 15px;
+  max-width: 800px;
 }
 
-.about-me__text h4{
+.about-me__tecnologies{
+  margin-top: 50px;
+
+}
+
+.about-me__tecnologies h2{
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  padding-bottom: 15px;
 }
 
-.about-me__text--tecnologies{
+.about-me__tecnologies--images{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about-me__text--tecnologies img{
-  width: 90px;
-  height: 90px;
+.about-me__tecnologies img{
+  width: 70px;
+  height: 70px;
+}
+
+figure {
+  border: #00109c solid 3px;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+figcaption{
+  font-size: .9rem;
+  font-weight: 600;
 }
 
 /* @media (max-width: 1100px) {
@@ -288,8 +309,7 @@ iframe {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 0px 0px 10px 0px;
-  border-bottom: solid 2px #00109c;
+  padding-bottom: 10px;
 }
 
 .projects__container {
@@ -363,7 +383,7 @@ iframe {
 }
 
 .projects__buttons--button:hover {
-   color: #fff;
+  color: #f9f9f9de;
   background-color: #00109c;
   transition: background-color ease 300ms;
   transform: scale(105%);
