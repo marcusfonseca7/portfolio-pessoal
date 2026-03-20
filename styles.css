@@ -45,8 +45,14 @@ iframe {
 }
 
 .hr-center {
-  border: solid 1px #00109c;
+  border: solid 2px #00109c;
   width: 30%;
+  justify-self: center;
+}
+
+.hr-center-wide {
+  border: solid 2px #00109c;
+  width: 65%;
   justify-self: center;
 }
 
@@ -212,7 +218,6 @@ iframe {
 /* ABOUT ME */
 
 .about-me__ {
-  border-bottom: solid 2px #00109c;
   padding: 0 0 25px 0;
   width: 100%;
   justify-self: center;
@@ -308,7 +313,6 @@ figcaption{
 .projects__ {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   padding-bottom: 10px;
 }
 
