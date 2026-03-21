@@ -13,9 +13,6 @@ body {
   color: #f9f9f9;
   min-height: 100svh;
   min-width: 98svw;
-  text-align: center;
-  /* background-color: #13131F; */
-
   background-image: linear-gradient(to right, #13131F, #000428);
 }
 
@@ -270,6 +267,11 @@ figure {
   border-radius: 20px;
 }
 
+figure:hover {
+  transform: scale(1.1);
+  transition: transform ease 100ms;
+}
+
 figcaption{
   font-size: .9rem;
   font-weight: 600;
@@ -326,10 +328,18 @@ figcaption{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
+  border: 1px solid #000e8d;
+  max-width: 85%;
+  align-self: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px #000e8d;
+  background-image: linear-gradient(to right, #1f1f31, #00063f);
+  margin: 10px 20px;
 }
 
-.projects__project-reverse {
+.projects__project.reverse {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -363,7 +373,7 @@ figcaption{
   justify-content: center;
   padding: 15px;
   gap: 10px;
-  text-align: start;
+  text-align: justify;
   font-size: 1.1rem;
   max-width: 450px;
 }
@@ -415,13 +425,13 @@ figcaption{
 
 @media (max-width: 1100px) {
   .projects__image-project {
-    width: 48vw;
+    width: 45vw;
   }
 }
 
 @media (max-width: 880px) {
   .projects__project,
-  .projects__project-reverse {
+  .projects__project.reverse {
     flex-direction: column;
   }
 
@@ -471,6 +481,7 @@ figcaption{
   padding: 25px;
   font-weight: 700;
   font-size: 2rem;
+  text-align: center;
 }
 
 .contact__text {
