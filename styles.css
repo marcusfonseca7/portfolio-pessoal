@@ -34,11 +34,6 @@ img {
   margin: 10px;
 }
 
-iframe {
-  margin: 10px;
-  border: none;
-}
-
 /* Linhas horizontais que estão em algumas partes da página, ajuda no visual */
 .hr-l {
   border: solid 1px var(--azul-padrao);
@@ -101,7 +96,7 @@ iframe {
   color: #fff;
 }
 
-.header__list li{
+.header__list li {
   transition: transform ease 200ms;
 }
 
@@ -192,7 +187,9 @@ iframe {
   font-weight: 600;
   border: solid 2px var(--azul-padrao);
   border-radius: 20px;
-  transition: transform ease 300ms, background-color ease 300ms;
+  transition:
+    transform ease 300ms,
+    background-color ease 300ms;
 }
 
 .hero__buttons--button:hover {
@@ -342,8 +339,6 @@ figcaption {
   transform: scale(1.05);
 }
 
-
-
 .projects__project.reverse {
   display: flex;
   flex-direction: row-reverse;
@@ -365,9 +360,15 @@ figcaption {
   border-radius: 10px;
 }
 
+iframe {
+  margin: 10px;
+  border: none;
+  flex-shrink: 0; /* Nao deixa o iframe ser empurrado e diminuido*/
+}
+
 .projects__iframe-project {
-  width: 500px;
-  height: 337px;
+  width: 470px;
+  height: 307px;
 }
 
 .projects__description {
@@ -375,7 +376,7 @@ figcaption {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
   gap: 10px;
   text-align: justify;
   font-size: 1.1rem;
@@ -437,7 +438,8 @@ figcaption {
     flex-direction: column;
   }
 
-  .projects__image-project {
+  .projects__image-project,
+  .projects__iframe-project {
     width: 500px;
   }
 
@@ -451,7 +453,7 @@ figcaption {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .projects__image-project {
     width: 400px;
   }
@@ -466,14 +468,14 @@ figcaption {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 530px) {
   .projects__image-project {
-    width: 400px;
+    width: 75vw;
   }
 
   .projects__iframe-project {
-    width: 400px;
-    height: 221px;
+    width: 75vw;
+    height: 39vh;
   }
 }
 
