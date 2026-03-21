@@ -122,6 +122,7 @@ iframe {
 .hero__ {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
 .hero__img img {
@@ -246,7 +247,7 @@ iframe {
 .about-me__tecnologies h2{
   text-align: center;
   font-size: 2rem;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .about-me__tecnologies--images{
@@ -277,38 +278,21 @@ figcaption{
   font-weight: 600;
 }
 
-/* @media (max-width: 1100px) {
-  .about-me__title {
-    font-size: 2.7vw;
-    padding: 25px 0 10px 0;
-  }
-
-  .about-me__text {
-    font-size: 1.6vw;
+@media (max-width: 1100px) {
+  .about-me__tecnologies--images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
   }
 }
 
 @media (max-width: 880px) {
-  .about-me__title {
-    font-size: 2.7vw;
-    padding: 25px 0 10px 0;
-  }
-
-  .about-me__text {
-    font-size: 1.9vw;
-  }
+  
 }
 
 @media (max-width: 770px) {
-  .about-me__title {
-    font-size: 20px;
-    padding: 25px 0 10px 0;
-  }
-
-  .about-me__text {
-    font-size: 15px;
-  }
-} */
+  
+} 
 
 /* PROJECTS */
 
@@ -329,7 +313,7 @@ figcaption{
   align-items: center;
   justify-content: center;
   border: 1px solid #000e8d;
-  max-width: 85%;
+  max-width: 80%;
   align-self: center;
   gap: 10px;
   padding: 15px;
@@ -344,7 +328,6 @@ figcaption{
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
   gap: 10px;
 }
 
@@ -429,7 +412,7 @@ figcaption{
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   .projects__project,
   .projects__project.reverse {
     flex-direction: column;
