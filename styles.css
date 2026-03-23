@@ -116,9 +116,8 @@ img {
 }
 
 @media (max-width: 450px) {
-  .header__list {
-    padding-right: 50px;
-    gap: 15px;
+  .header__list{
+    font-size: .8rem;
   }
 }
 
@@ -220,6 +219,16 @@ img {
 
   .hero__description {
     font-size: 1rem;
+  }
+
+  .hero__buttons--button {
+    font-size: .7rem ;
+    padding: 7px 10px;;
+  }
+
+  .hero__buttons--icon {
+  width: 18px;
+  height: 18px;
   }
 }
 
