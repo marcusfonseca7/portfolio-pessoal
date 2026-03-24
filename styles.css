@@ -540,6 +540,17 @@ iframe {
   transform: scale(120%);
 }
 
+@media (max-width: 530px) {
+  .contact__title {
+     font-size: 1.8rem;
+  }
+
+  .contact__icons{
+    width: 40px;
+  }
+}
+
+
 /* FOOT */
 
 .foot__ {
@@ -547,4 +558,11 @@ iframe {
   justify-self: center;
   color: #ffffff7e;
   font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 530px) {
+  .foot__{
+    font-size: .8rem;
+  }
 }
