@@ -1,7 +1,7 @@
 /* VÁRIAVEL DE COR */
 
 :root {
-  --azul-padrao: #0017e2;
+  --cor-principal: #e20000;
 }
 
 /* RESET */
@@ -19,7 +19,7 @@ body {
   color: #f9f9f9;
   min-height: 100svh;
   min-width: 98svw;
-  background-image: linear-gradient(to right, #181827, #00063d);
+  background-image: linear-gradient(to right, #271818, #3d0000);
 }
 
 a {
@@ -36,34 +36,34 @@ img {
 
 /* Linhas horizontais que estão em algumas partes da página, ajuda no visual */
 .hr-l {
-  border: solid 1px var(--azul-padrao);
+  border: solid 1px var(--cor-principal);
   width: 80%;
   justify-self: center;
   margin: 0 5px;
 }
 
 .hr-center {
-  border: solid 2px var(--azul-padrao);
+  border: solid 2px var(--cor-principal);
   width: 30%;
   justify-self: center;
 }
 
 .hr-center-wide {
-  border: solid 2px var(--azul-padrao);
+  border: solid 2px var(--cor-principal);
   width: 65%;
   justify-self: center;
 }
 
 .hr-p--right {
   display: flex;
-  border: solid 1px var(--azul-padrao);
+  border: solid 1px var(--cor-principal);
   width: 20%;
   align-self: flex-end;
   margin: 0 5px;
 }
 
 .hr-p--left {
-  border: solid 1px var(--azul-padrao);
+  border: solid 1px var(--cor-principal);
   width: 20%;
   margin: 0 5px;
 }
@@ -74,9 +74,9 @@ img {
   display: flex;
   justify-content: end;
   align-items: center;
-  border-bottom: solid 4px var(--azul-padrao);
+  border-bottom: solid 4px var(--cor-principal);
   margin-bottom: 15px;
-  background-image: linear-gradient(to right, #181827, #00063d);
+  background-image: linear-gradient(to right, #271818, #3d0000);
   width: 100%;
   justify-self: center;
   position: sticky;
@@ -134,7 +134,7 @@ img {
   width: 350px;
   height: 350px;
   border-radius: 1000px;
-  border: solid 5px var(--azul-padrao);
+  border: solid 5px var(--cor-principal);
   transition: transform ease 300ms;
 }
 
@@ -181,7 +181,7 @@ img {
   gap: 10px;
   font-size: 0.9rem;
   font-weight: 600;
-  border: solid 2px var(--azul-padrao);
+  border: solid 2px var(--cor-principal);
   border-radius: 20px;
   transition:
     transform ease 300ms,
@@ -190,7 +190,7 @@ img {
 
 .hero__buttons--button:hover {
   color: #f9f9f9de;
-  background-color: var(--azul-padrao);
+  background-color: var(--cor-principal);
   transform: scale(110%);
 }
 
@@ -285,7 +285,7 @@ img {
 }
 
 figure {
-  border: var(--azul-padrao) solid 3px;
+  border: var(--cor-principal) solid 3px;
   padding: 15px;
   border-radius: 20px;
   transition: transform ease 200ms;
@@ -356,14 +356,14 @@ figcaption {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000e8d;
+  border: 1px solid #8d0000;
   max-width: 80%;
   align-self: center;
   gap: 10px;
   padding: 15px;
   border-radius: 20px;
-  box-shadow: 0 0 10px 2px #000e8d;
-  background-image: linear-gradient(to right, #1f1f31, #00063f);
+  box-shadow: 0 0 10px 2px #8d0000;
+  background-image: linear-gradient(to right, #311f1f, #3f0000);
   transition: transform ease 500ms;
   margin: 15px;
 }
@@ -428,13 +428,13 @@ iframe {
   padding: 7px 15px;
   font-size: 0.9rem;
   font-weight: 600;
-  border: solid 2px var(--azul-padrao);
+  border: solid 2px var(--cor-principal);
   border-radius: 20px;
 }
 
 .projects__buttons--button:hover {
   color: #f9f9f9de;
-  background-color: var(--azul-padrao);
+  background-color: var(--cor-principal);
   transition: background-color ease 300ms;
   transform: scale(105%);
   transition: transform ease 200ms;
