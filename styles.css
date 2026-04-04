@@ -19,7 +19,7 @@ body {
   color: #f9f9f9;
   min-height: 100svh;
   min-width: 98svw;
-  background-image: linear-gradient(to right, #241616, #550000);
+  background-image: linear-gradient(to right, #130b0b, #550000);
 }
 
 a {
@@ -76,7 +76,7 @@ img {
   align-items: center;
   border-bottom: solid 4px var(--cor-principal);
   margin-bottom: 15px;
-  background-image: linear-gradient(to right, #241616, #550000);
+  background-image: linear-gradient(to right, #130b0b, #550000);
   width: 100%;
   justify-self: center;
   position: sticky;
