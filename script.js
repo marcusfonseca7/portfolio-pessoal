@@ -1,1 +1,7 @@
-console.log("JavaScript conectado!");
+const description = document.getElementById("projectDescription")
+
+function openDescription() {
+    description.classList.toggle('hidden')
+}
+
+

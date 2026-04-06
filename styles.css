@@ -361,6 +361,8 @@ figcaption {
   justify-content: center;
   border: 1px solid #8d0000;
   max-width: 80%;
+  min-width: 80%;
+  min-height: 500px;
   align-self: center;
   gap: 10px;
   padding: 15px;
@@ -392,7 +394,7 @@ figcaption {
 }
 
 .projects__image-project {
-  width: 500px;
+  width: 65%;
   border-radius: 10px;
 }
 
@@ -417,6 +419,8 @@ iframe {
   text-align: justify;
   font-size: 1.1rem;
   max-width: 450px;
+  transition: opacity 0.5s ease, visibility 0.5s;
+
 }
 
 .projects__buttons {
@@ -586,4 +590,12 @@ iframe {
   .foot__ {
     font-size: 0.8rem;
   }
+}
+
+
+/* JS */
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
