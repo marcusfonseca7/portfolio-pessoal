@@ -2,6 +2,9 @@
 
 :root {
   --cor-principal: #ca0000;
+  --cor1-gradient: #130b0b;
+  --cor2-gradient: #550000;
+  --border-black: #000;
 }
 
 /* RESET */
@@ -19,7 +22,7 @@ body {
   color: #f9f9f9;
   min-height: 100svh;
   min-width: 98svw;
-  background-image: linear-gradient(to right, #130b0b, #550000);
+  background-image: linear-gradient(to right, var(--cor1-gradient), var(--cor2-gradient));
 }
 
 a {
@@ -36,34 +39,34 @@ img {
 
 /* Linhas horizontais que estão em algumas partes da página, ajudam no visual */
 .hr-l {
-  border: solid 3px #000;
+  border: solid 3px var(--border-black);
   width: 80%;
   justify-self: center;
   margin: 0 5px;
 }
 
 .hr-center {
-  border: solid 2px #000;
+  border: solid 2px var(--border-black);
   width: 30%;
   justify-self: center;
 }
 
 .hr-center-wide {
-  border: solid 2px #000;
+  border: solid 2px var(--border-black);
   width: 65%;
   justify-self: center;
 }
 
 .hr-p--right {
   display: flex;
-  border: solid 1px #000;
+  border: solid 1px var(--border-black);
   width: 20%;
   align-self: flex-end;
   margin: 0 5px;
 }
 
 .hr-p--left {
-  border: solid 2px #000;
+  border: solid 2px var(--border-black);
   width: 20%;
   margin: 0 5px;
 }
@@ -76,7 +79,7 @@ img {
   align-items: center;
   border-bottom: solid 4px var(--cor-principal);
   margin-bottom: 15px;
-  background-image: linear-gradient(to right, #130b0b, #550000);
+  background-image: linear-gradient(to right, var(--cor1-gradient), var(--cor2-gradient));
   width: 100%;
   justify-self: center;
   position: sticky;
@@ -285,7 +288,7 @@ img {
 }
 
 figure {
-  border: #000000 solid 3px;
+  border: var(--border-black) solid 3px;
   padding: 15px;
   border-radius: 20px;
   transition: transform ease 200ms;
