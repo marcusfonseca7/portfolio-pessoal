@@ -38,7 +38,7 @@ a {
 img {
   display: block;
   max-height: 100%;
-  margin: 10px;
+  margin: 5px;
 }
 
 /* Linhas horizontais que estão em algumas partes da página, ajudam no visual */
@@ -365,22 +365,22 @@ figcaption {
 
 .projects__project {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
   border: 1px solid #8d0000;
   max-width: 80%;
-  min-width: 80%;
   min-height: 500px;
+  max-height: 500px;
   align-self: center;
   gap: 10px;
   padding: 15px;
   border-radius: 20px;
+  transition:
+    grid-template-columns ease-in-out 0.5s;
   box-shadow: 0 0 10px 2px #8d0000;
   background-image: linear-gradient(to right, #311f1f, #3f0000);
-  transition: transform ease 500ms;
   margin: 15px;
-  transition: all 0.5s ease;
 }
 
 .projects__project:hover {
@@ -427,8 +427,11 @@ iframe {
   gap: 5px;
   text-align: justify;
   font-size: 1rem;
+  min-width: 450px;
   max-width: 450px;
-  transition: all 0.5s ease;
+  max-height: 200px;
+  transition: transform 0.5s ease;
+  transition-delay: 1s;
 }
 
 .projects__description.reverse {
@@ -471,7 +474,6 @@ iframe {
   text-align: start;
 }
 
-
 .projects__description--technologies {
   text-align: center;
 }
@@ -485,7 +487,8 @@ iframe {
 @media (max-width: 1000px) {
   .projects__project,
   .projects__project.reverse {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    max-height: fit-content;
   }
 
   .projects__image-project,
@@ -608,9 +611,18 @@ iframe {
 /* JS */
 
 .hidden {
-  display: none;
+  visibility: hidden;
+  overflow: hidden;
+  max-height: 100px;
+  position: absolute;
+  z-index: -1;
 }
 
 .active {
-  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 0fr;
+  grid-template-rows: 435px;
+  max-height: 500px;
+  z-index: 1;
+  padding: 30px;
 }
