@@ -376,8 +376,7 @@ figcaption {
   gap: 10px;
   padding: 15px;
   border-radius: 20px;
-  transition:
-    grid-template-columns ease-in-out 0.5s;
+  transition: grid-template-columns ease 0.5s;
   box-shadow: 0 0 10px 2px #8d0000;
   background-image: linear-gradient(to right, #311f1f, #3f0000);
   margin: 15px;
@@ -403,6 +402,7 @@ figcaption {
 }
 
 .projects__image-project {
+  z-index: 1;
   width: 600px;
   border-radius: 15px;
 }
@@ -430,8 +430,8 @@ iframe {
   min-width: 450px;
   max-width: 450px;
   max-height: 200px;
-  transition: transform 0.5s ease;
-  transition-delay: 1s;
+    transition: ease 0.05s transform;
+      z-index: 0;
 }
 
 .projects__description.reverse {
@@ -616,11 +616,14 @@ iframe {
   max-height: 100px;
   position: absolute;
   z-index: -1;
+  transition-delay: 1s;
+  transform: opacity(0);
 }
 
 .active {
   grid-auto-flow: column;
-  grid-template-columns: 2fr 0fr;
+  grid-template-columns: 2fr 0px;
+  transition-delay: 0.05s;
   grid-template-rows: 435px;
   max-height: 500px;
   z-index: 1;
