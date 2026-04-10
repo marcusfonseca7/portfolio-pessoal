@@ -380,7 +380,6 @@ figcaption {
 .projects__project.active {
   /* Quando está fechado */
   width: 35%;
-  z-index: 1;
   padding: 30px;
 }
 
@@ -432,11 +431,12 @@ iframe {
   font-size: 1rem;
   width: 380px;
   height: 200px;
-  transition: transform ease 1s;
+  transition: transform ease 0.5s;
 }
 
 .projects__description.hidden {
   transform: translateX(-100%);
+  transition: transform ease 0.5;
   opacity: 0;
   height: 200px;
   position: absolute;
