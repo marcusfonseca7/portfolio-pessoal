@@ -22,9 +22,11 @@ body {
   color: #f9f9f9;
   min-height: 100svh;
   min-width: 98svw;
-  background-image: linear-gradient(to right,
-      var(--cor1-gradient),
-      var(--cor2-gradient));
+  background-image: linear-gradient(
+    to right,
+    var(--cor1-gradient),
+    var(--cor2-gradient)
+  );
 }
 
 a {
@@ -81,9 +83,11 @@ img {
   align-items: center;
   border-bottom: solid 4px var(--cor-principal);
   margin-bottom: 15px;
-  background-image: linear-gradient(to right,
-      var(--cor1-gradient),
-      var(--cor2-gradient));
+  background-image: linear-gradient(
+    to right,
+    var(--cor1-gradient),
+    var(--cor2-gradient)
+  );
   width: 100%;
   justify-self: center;
   position: sticky;
@@ -365,7 +369,7 @@ figcaption {
   align-items: center;
   justify-content: center;
   border: 1px solid #8d0000;
-  width: 60%;
+  width: 80%;
   height: 500px;
   align-self: center;
   gap: 10px;
@@ -374,13 +378,17 @@ figcaption {
   box-shadow: 0 0 10px 2px #8d0000;
   background-image: linear-gradient(to right, #311f1f, #3f0000);
   margin: 15px;
-  transition: transform ease 0.5s, width ease 0.5s;
+  transition:
+    transform ease 0.5s,
+    width ease 0.5s;
+  position: relative;
 }
 
 .projects__project.active {
   /* Quando está fechado */
-  width: 35%;
+  width: 50%;
   padding: 30px;
+  min-width: fit-content;
 }
 
 .projects__project:hover {
@@ -430,13 +438,12 @@ iframe {
   text-align: justify;
   font-size: 1rem;
   width: 380px;
-  height: 200px;
+  height: min-content;
   transition: transform ease 0.5s;
 }
 
 .projects__description.hidden {
   transform: translateX(-100%);
-  transition: transform ease 0.5;
   opacity: 0;
   height: 200px;
   position: absolute;
@@ -494,11 +501,12 @@ iframe {
 }
 
 @media (max-width: 1000px) {
-
   .projects__project,
   .projects__project.reverse {
-    grid-template-columns: 1fr;
-    max-height: fit-content;
+    flex-direction: column;
+    max-height: none;
+    transition: none;
+    min-height: 800px;
   }
 
   .projects__image-project,
@@ -510,6 +518,10 @@ iframe {
   .projects__description--title.reverse {
     align-self: center;
     text-align: center;
+  }
+
+  .projects__description.reverse {
+    order: 0;
   }
 
   .projects__container {
@@ -544,7 +556,6 @@ iframe {
 }
 
 @media (max-width: 400px) {
-
   .projects__description--title,
   .projects__description--title.reverse {
     font-size: 1.5rem;
@@ -552,6 +563,7 @@ iframe {
 
   .projects__description {
     font-size: 0.8rem;
+    max-width: fit-content;
   }
 
   .projects__description--technologies img {
