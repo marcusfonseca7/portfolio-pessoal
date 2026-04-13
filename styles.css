@@ -387,7 +387,7 @@ figcaption {
 .projects__project.active {
   /* Quando está fechado */
   width: 50%;
-  padding: 30px;
+  padding: 15px;
   min-width: fit-content;
 }
 
@@ -504,9 +504,15 @@ iframe {
   .projects__project,
   .projects__project.reverse {
     flex-direction: column;
-    max-height: none;
+    max-height: fit-content;
+    max-width: fit-content;
     transition: none;
-    min-height: 800px;
+    min-height: fit-content;
+  }
+  
+
+  .projects__description.hidden {
+    transform: translateY(-60%);
   }
 
   .projects__image-project,
@@ -520,7 +526,9 @@ iframe {
     text-align: center;
   }
 
+  .projects__description,
   .projects__description.reverse {
+    max-width: fit-content;
     order: 0;
   }
 
@@ -549,6 +557,10 @@ iframe {
     width: 75vw;
   }
 
+  .projects__project.active {
+    padding: 19px 3px;
+  }
+
   .projects__iframe-project {
     width: 75vw;
     height: 39vh;
@@ -563,7 +575,6 @@ iframe {
 
   .projects__description {
     font-size: 0.8rem;
-    max-width: fit-content;
   }
 
   .projects__description--technologies img {
