@@ -22,9 +22,11 @@ body {
   color: #f9f9f9;
   min-height: 100svh;
   min-width: 98svw;
-  background-image: linear-gradient(to right,
-      var(--cor1-gradient),
-      var(--cor2-gradient));
+  background-image: linear-gradient(
+    to right,
+    var(--cor1-gradient),
+    var(--cor2-gradient)
+  );
 }
 
 a {
@@ -81,9 +83,11 @@ img {
   align-items: center;
   border-bottom: solid 4px var(--cor-principal);
   margin-bottom: 15px;
-  background-image: linear-gradient(to right,
-      var(--cor1-gradient),
-      var(--cor2-gradient));
+  background-image: linear-gradient(
+    to right,
+    var(--cor1-gradient),
+    var(--cor2-gradient)
+  );
   width: 100%;
   justify-self: center;
   position: sticky;
@@ -284,6 +288,7 @@ img {
   gap: 120px;
   max-width: 950px;
   grid-template-columns: repeat(auto-fit, minmax(110px, 110px));
+  justify-self: center;
 }
 
 .about-me__degrees--images img {
@@ -298,6 +303,11 @@ img {
   transition: transform ease 200ms;
   min-width: 200px;
   justify-items: center;
+}
+
+.about-me__degrees--images-ufabc {
+  width: 150px;
+  height: 130px;
 }
 
 .about-me__tecnologies {
@@ -374,7 +384,7 @@ figcaption {
   }
 
   .about-me__tecnologies--images figure {
-    padding: 10px;
+    padding: 15px;
     max-width: 100px;
   }
 
@@ -391,6 +401,7 @@ figcaption {
   .about-me__degrees--images figure {
     padding: 5px;
     max-width: 30px;
+    min-width: fit-content;
   }
 }
 
@@ -424,7 +435,7 @@ figcaption {
   align-items: center;
   justify-content: center;
   border: 1px solid #8d0000;
-  width: 80%;
+  width: 1050px;
   height: 500px;
   align-self: center;
   gap: 10px;
@@ -441,7 +452,7 @@ figcaption {
 
 .projects__project.closed {
   /* Quando está fechado */
-  width: 50%;
+  width: 655px;
   padding: 15px;
   min-width: min-content;
 }
@@ -472,15 +483,6 @@ figcaption {
   position: absolute;
   transition: left ease 0.5s;
   left: 20px;
-}
-
-.projects__iframe-project {
-  width: 570px;
-  height: 407px;
-  margin: 10px;
-  border: none;
-  flex-shrink: 0;
-  /* Nao deixa o iframe ser empurrado e diminuido*/
 }
 
 .projects__description {
@@ -551,36 +553,31 @@ figcaption {
 }
 
 .projects__project--click-description {
-  align-self: flex-end;
-  position: absolute;
-  color: #f9f9f93a;
   opacity: 0;
 }
 
 .projects__project.closed .projects__project--click-description {
   opacity: 1;
+  align-self: flex-end;
+  position: absolute;
+  color: #f9f9f93a;
 }
 
 @media (max-width: 1100px) {
-  .projects__image-project {
-    width: 45vw;
-  }
-}
-
-@media (max-width: 1000px) {
   .projects__project {
     flex-direction: column;
-    max-height: fit-content;
+    height: fit-content;
+    min-width: fit-content;
     max-width: fit-content;
-    min-width: min-content;
-    transition: none;
-    min-height: fit-content;
+  }
+
+  .projects__project.closed {
+    height: fit-content;
   }
 
   .projects__description {
     position: relative;
     left: 0;
-    z-index: -1;
   }
 
   .projects__description.hidden {
@@ -595,19 +592,17 @@ figcaption {
     z-index: 1;
   }
 
-  .projects__project--click-description {
+  .projects__project.closed .projects__project--click-description {
     position: relative;
     align-self: center;
   }
 
-  .projects__description--title,
-  .projects__description--title.reverse {
+  .projects__description--title {
     align-self: center;
     text-align: center;
   }
 
-  .projects__description,
-  .projects__description.reverse {
+  .projects__description {
     max-width: fit-content;
     order: 0;
   }
@@ -625,25 +620,11 @@ figcaption {
   .projects__container {
     gap: 15px;
   }
-
-  .projects__iframe-project {
-    width: 400px;
-    height: 221px;
-  }
 }
 
 @media (max-width: 530px) {
   .projects__image-project {
     width: 75vw;
-  }
-
-  .projects__project.active {
-    padding: 19px 3px;
-  }
-
-  .projects__iframe-project {
-    width: 75vw;
-    height: 39vh;
   }
 
   .projects__project--click-description {
@@ -653,7 +634,6 @@ figcaption {
 }
 
 @media (max-width: 400px) {
-
   .projects__description--title,
   .projects__description--title.reverse {
     font-size: 1.5rem;
@@ -669,11 +649,6 @@ figcaption {
 
   .projects__buttons--button {
     font-size: 0.7rem;
-  }
-
-  .projects__iframe-project {
-    width: 77vw;
-    height: 23vh;
   }
 }
 
