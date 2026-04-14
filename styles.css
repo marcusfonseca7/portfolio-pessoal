@@ -384,7 +384,7 @@ figcaption {
   position: relative;
 }
 
-.projects__project.active {
+.projects__project.closed {
   /* Quando está fechado */
   width: 50%;
   padding: 15px;
@@ -414,18 +414,18 @@ figcaption {
   z-index: 1;
   width: 600px;
   border-radius: 15px;
-}
-
-iframe {
-  margin: 10px;
-  border: none;
-  flex-shrink: 0;
-  /* Nao deixa o iframe ser empurrado e diminuido*/
+  position: absolute;
+  transition: left ease 0.5s;
+  left: 20px;
 }
 
 .projects__iframe-project {
   width: 570px;
   height: 407px;
+  margin: 10px;
+  border: none;
+  flex-shrink: 0;
+  /* Nao deixa o iframe ser empurrado e diminuido*/
 }
 
 .projects__description {
@@ -440,13 +440,14 @@ iframe {
   width: 380px;
   height: min-content;
   transition: transform ease 0.5s;
+  position: absolute;
+  left: 640px;
 }
 
 .projects__description.hidden {
-  transform: translateX(-100%);
+  transform: translateX(-120%);
   opacity: 0;
   height: 200px;
-  position: absolute;
   z-index: -1;
 }
 
@@ -494,6 +495,17 @@ iframe {
   text-align: center;
 }
 
+.projects__project--click-description{
+  align-self: flex-end;
+  position: absolute;
+  color: #f9f9f93a;
+  opacity: 0;
+}
+
+.projects__project.closed .projects__project--click-description {
+  opacity: 1;
+}
+
 @media (max-width: 1100px) {
   .projects__image-project {
     width: 45vw;
@@ -501,23 +513,35 @@ iframe {
 }
 
 @media (max-width: 1000px) {
-  .projects__project,
-  .projects__project.reverse {
+  .projects__project {
     flex-direction: column;
     max-height: fit-content;
     max-width: fit-content;
     transition: none;
     min-height: fit-content;
   }
-  
 
+  .projects__description{
+    position: relative;
+    left: 0;
+    z-index: -1;
+  }
+  
   .projects__description.hidden {
     transform: translateY(-60%);
+    height: 0px;
   }
 
-  .projects__image-project,
-  .projects__iframe-project {
+  .projects__image-project {
     width: 500px;
+    position: relative;
+    left: 0;
+    z-index: 1;
+  }
+
+  .projects__project--click-description{
+    position: relative;
+    align-self: center;
   }
 
   .projects__description--title,
@@ -535,6 +559,8 @@ iframe {
   .projects__container {
     gap: 15px;
   }
+
+
 }
 
 @media (max-width: 650px) {
@@ -564,6 +590,11 @@ iframe {
   .projects__iframe-project {
     width: 75vw;
     height: 39vh;
+  }
+
+  .projects__project--click-description{
+    font-size: .9rem;
+    text-align: center;
   }
 }
 

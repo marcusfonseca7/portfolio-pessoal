@@ -1,7 +1,10 @@
-const description = document.getElementById("projectDescription");
-const containerProject = document.getElementById("project");
+const containerProject = document.querySelectorAll(".projects__project");
+const description = document.querySelectorAll(".projects__description");
+const image = document.querySelectorAll(".projects__image-project");
 
-function openDescription() {
-  containerProject.classList.toggle("active");
-  description.classList.toggle("hidden");
-}
+containerProject.forEach((project, index) => {
+  image[index].addEventListener("click", () => {
+    project.classList.toggle("closed");
+    description[index].classList.toggle("hidden");
+  });
+});

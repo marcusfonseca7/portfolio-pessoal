@@ -139,14 +139,15 @@
         <p class="projects__title">Projetos</p>
 
         <div class="projects__container">
-          <div class="projects__project" id="project">
+          <div class="projects__project closed" id="project">
             <img
               class="projects__image-project"
               src="img/replica-spotify.png"
               alt="Screenshot do projeto"
+              id="image"
               onclick="openDescription()"
             />
-            <div class="projects__description" id="projectDescription">
+            <div class="projects__description hidden" id="projectDescription">
               <h3 class="projects__description--title">Réplica do Spotify</h3>
               <p>
                 Projeto Full-Stack de réplica da plataforma do Spotify,
@@ -180,18 +181,20 @@
                 >
               </div>
             </div>
+            <p class="projects__project--click-description">Clique na imagem para ver a descrição</p>
           </div>
 
           <hr class="hr-p--left" />
 
-          <div class="projects__project reverse">
+          <div class="projects__project closed">
             <img
               class="projects__image-project"
               src="img/AnuncioPerfeito.png"
               alt="Foto da interface do projeto"
+              onclick="openDescription()"
             />
-            <div class="projects__description reverse" id="projectDescription2">
-              <h3 class="projects__description--title reverse">
+            <div class="projects__description hidden">
+              <h3 class="projects__description--title">
                 Anúncio Perfeito
               </h3>
               <p>
@@ -220,17 +223,18 @@
                 >
               </div>
             </div>
+            <p class="projects__project--click-description">Clique na imagem para ver a descrição </p>
           </div>
 
           <hr class="hr-p--right" />
 
-          <div class="projects__project">
-            <iframe
-              class="projects__iframe-project"
-              src="https://drive.google.com/file/d/1g60_K93Y-8leZXQahwQthMza9ZPP-ygt/preview"
-            ></iframe>
+          <div class="projects__project closed">
+            <img
+              class="projects__image-project"
+              src="img/Agenda.png"
+              ></img>
 
-            <div class="projects__description" id="projectDescription3">
+            <div class="projects__description hidden">
               <h3 class="projects__description--title">Agenda de Contatos</h3>
               <p>
                 Projeto academico de criação de agenda digital. Utilizando CRUD
@@ -254,8 +258,15 @@
                   class="projects__buttons--button"
                   >GitHub</a
                 >
+                <a
+                  href="https://drive.google.com/file/d/1g60_K93Y-8leZXQahwQthMza9ZPP-ygt/preview"
+                  target="_blank"
+                  class="projects__buttons--button"
+                  >Vídeo Demo</a
+                >
               </div>
             </div>
+            <p class="projects__project--click-description">Clique na imagem para ver a descrição</p>
           </div>
         </div>
       </section>
