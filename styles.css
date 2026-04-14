@@ -255,6 +255,12 @@ img {
   justify-items: center;
 }
 
+.about-me__ h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
 .about-me__title {
   padding: 15px 0 10px 0;
   font-weight: 700;
@@ -279,31 +285,27 @@ img {
   justify-items: center;
   justify-content: center;
   margin-bottom: 50px;
-  gap: 100px;
+  gap: 120px;
   max-width: 950px;
   grid-template-columns: repeat(auto-fit, minmax(110px, 110px));
 }
 
-.about-me__degrees--images img{
+.about-me__degrees--images img {
   width: 130px;
   height: 130px;
 }
 
 .about-me__degrees--images figure {
   border: var(--border-black) solid 3px;
-  padding: 15px;
+  padding: 20px;
   border-radius: 20px;
   transition: transform ease 200ms;
+  min-width: 200px;
+  justify-items: center;
 }
 
 .about-me__tecnologies {
   margin-top: 75px;
-}
-
-.about-me__ h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 25px;
 }
 
 .about-me__tecnologies--images {
@@ -333,9 +335,20 @@ figure:hover {
 }
 
 figcaption {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-align: center;
+}
+
+.text-complete {
+  display: block;
+  margin-top: 10px;
+  color: rgb(0, 216, 0);
+}
+.text-inprogress {
+  display: block;
+  margin-top: 10px;
+  color: #ca0000;
 }
 
 @media (max-width: 1100px) {
@@ -522,7 +535,7 @@ figcaption {
   text-align: center;
 }
 
-.projects__project--click-description{
+.projects__project--click-description {
   align-self: flex-end;
   position: absolute;
   color: #f9f9f93a;
@@ -548,12 +561,12 @@ figcaption {
     min-height: fit-content;
   }
 
-  .projects__description{
+  .projects__description {
     position: relative;
     left: 0;
     z-index: -1;
   }
-  
+
   .projects__description.hidden {
     transform: translateY(-60%);
     height: 0px;
@@ -566,7 +579,7 @@ figcaption {
     z-index: 1;
   }
 
-  .projects__project--click-description{
+  .projects__project--click-description {
     position: relative;
     align-self: center;
   }
@@ -586,8 +599,6 @@ figcaption {
   .projects__container {
     gap: 15px;
   }
-
-
 }
 
 @media (max-width: 650px) {
@@ -619,8 +630,8 @@ figcaption {
     height: 39vh;
   }
 
-  .projects__project--click-description{
-    font-size: .9rem;
+  .projects__project--click-description {
+    font-size: 0.9rem;
     text-align: center;
   }
 }
@@ -701,4 +712,3 @@ figcaption {
     font-size: 0.8rem;
   }
 }
-
