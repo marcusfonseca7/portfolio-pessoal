@@ -43,8 +43,20 @@ Além de servir como apresentação profissional, este projeto representa minha 
 
 ## 🤔 Como estava antes??
 
-![Print do antes pt1](img/print_portfolio_antigo.png)
+<div align="center">
+<img src="img/print_portfolio_antigo.png" width="300px">
+<img src="img/print_portfolio_antigo2.png" width="300px">
+<img src="img/print_portfolio_antigo3.png" width="300px">
+</div>
 
-![Print do antes pt2](img/print_portfolio_antigo2.png)
 
-![Print do antes pt3](img/print_portfolio_antigo3.png)
+## 🤩 Como ficou??
+
+<div align="center">
+<img src="img/print_portfolio_novo.png" width="300px">
+<img src="img/print_portfolio_novo2.png" width="300px">
+<img src="img/print_portfolio_novo3.png" width="300px">
+<img src="img/print_portfolio_novo4.png" width="300px">
+<img src="img/print_portfolio_novo5.png" width="300px">
+<img src="img/print_portfolio_novo6.png" width="300px">
+</div>
