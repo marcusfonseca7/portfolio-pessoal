@@ -65,6 +65,6 @@ Além de servir como apresentação profissional, este projeto representa minha 
 
 
 ## 😆 Quer ver funcionando??
-Visite meu post no LinkedIn que contém um vídeo demonstrativo: 
+Visite meu post no LinkedIn que contém um vídeo demonstrativo: <a href="https://www.linkedin.com/posts/marcusfonseca7_html-css-javascript-activity-7449963498383663104-5hsW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEtWFbMBOCSeWEax5VMb0NGD5w3cE8VyC0Q"> Vídeo no LinkedIn </a> 
 
 Logo mais estará disponível para acesso...
