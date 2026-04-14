@@ -11,7 +11,7 @@ Com a evolução dos meus conhecimentos em desenvolvimento web, estou reformulan
 
 - <p> <img src="https://skillicons.dev/icons?i=css" /> </p>
 
-- <p> <img src="https://skillicons.dev/icons?i=js" /> Em implementação*</p> 
+- <p> <img src="https://skillicons.dev/icons?i=js" /> </p> 
 
 ## 🎯 Objetivo
 
