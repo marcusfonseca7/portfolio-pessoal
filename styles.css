@@ -5,6 +5,21 @@
   --cor1-gradient: #130b0b;
   --cor2-gradient: #550000;
   --border-black: #000;
+
+  --border-projects: #8d0000;
+  --cor1-gradient-projects: #311f1f;
+  --cor2-gradient-projects: #3f0000;
+}
+
+.light {
+  --cor-principal: #0017e2;
+  --cor1-gradient: #181827;
+  --cor2-gradient: #00063d;
+  --border-black: #000;
+
+  --border-projects: #000e8d;
+  --cor1-gradient-projects: #1f1f31;
+  --cor2-gradient-projects: #00063f;
 }
 
 /* -------------------------------------- RESET -------------------------------------- */
@@ -39,6 +54,21 @@ img {
   display: block;
   max-height: 100%;
   margin: 5px;
+}
+
+.turn-mode {
+  background: none;
+  border: 1px solid var(--cor-principal);
+  color: #fff;
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.turn-mode img{
+  width: 30px;
 }
 
 /* Linhas horizontais que estão em algumas partes da página, ajudam no visual */
@@ -79,7 +109,7 @@ img {
 
 .header__ {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   border-bottom: solid 4px var(--cor-principal);
   margin-bottom: 15px;
@@ -297,7 +327,7 @@ img {
 }
 
 .about-me__degrees--images figure {
-  border: var(--border-black) solid 3px;
+  border: var(--border-projects) solid 3px;
   padding: 20px;
   border-radius: 20px;
   transition: transform ease 200ms;
@@ -350,12 +380,16 @@ figcaption {
   display: block;
   margin-top: 10px;
   color: rgb(0, 216, 0);
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .text-inprogress {
   display: block;
   margin-top: 10px;
-  color: #ca0000;
+  color: var(--cor-principal);
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 @media (max-width: 1100px) {
@@ -403,6 +437,11 @@ figcaption {
     max-width: 30px;
     min-width: fit-content;
   }
+
+  .text-complete,
+  .text-inprogress {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 430px) {
@@ -434,15 +473,19 @@ figcaption {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #8d0000;
+  border: 1px solid var(--border-projects);
   width: 1050px;
   height: 500px;
   align-self: center;
   gap: 10px;
   padding: 15px;
   border-radius: 20px;
-  box-shadow: 0 0 10px 2px #8d0000;
-  background-image: linear-gradient(to right, #311f1f, #3f0000);
+  box-shadow: 0 0 10px 2px var(--border-projects);
+  background-image: linear-gradient(
+    to right,
+    var(--cor1-gradient-projects),
+    var(--cor2-gradient-projects)
+  );
   margin: 15px;
   transition:
     transform ease 0.5s,
