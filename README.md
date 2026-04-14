@@ -58,5 +58,13 @@ Além de servir como apresentação profissional, este projeto representa minha 
 <img src="img/print_portfolio_novo3.png" width="300px">
 <img src="img/print_portfolio_novo4.png" width="300px">
 <img src="img/print_portfolio_novo5.png" width="300px">
+
+  <p>Modo Claro: </p>
 <img src="img/print_portfolio_novo6.png" width="300px">
 </div>
+
+
+## 😆 Quer ver funcionando??
+Visite meu post no LinkedIn que contém um vídeo demonstrativo: 
+
+Logo mais estará disponível para acesso...
