@@ -44,23 +44,24 @@ Além de servir como apresentação profissional, este projeto representa minha 
 ## 🤔 Como estava antes??
 
 <div align="center">
-<img src="img/print_portfolio_antigo.png" width="300px">
-<img src="img/print_portfolio_antigo2.png" width="300px">
-<img src="img/print_portfolio_antigo3.png" width="300px">
+<img src="img/print_portfolio_antigo.png" width="350px">
+<img src="img/print_portfolio_antigo2.png" width="350px">
+<img src="img/print_portfolio_antigo3.png" width="350px">
 </div>
 
 
 ## 🤩 Como ficou??
 
 <div align="center">
-<img src="img/print_portfolio_novo.png" width="300px">
-<img src="img/print_portfolio_novo2.png" width="300px">
-<img src="img/print_portfolio_novo3.png" width="300px">
-<img src="img/print_portfolio_novo4.png" width="300px">
-<img src="img/print_portfolio_novo5.png" width="300px">
+<img src="img/print_portfolio_novo.png" width="400px">
+<img src="img/print_portfolio_novo2.png" width="400px">
+<img src="img/print_portfolio_novo3.png" width="400px">
+<img src="img/print_portfolio_novo4.png" width="400px">
+<img src="img/print_portfolio_novo5.png" width="400px">
 
-  <p>Modo Claro: </p>
-<img src="img/print_portfolio_novo6.png" width="300px">
+<br>
+  <p> Modo Claro: </p>
+<img src="img/print_portfolio_novo6.png" width="400px">
 </div>
 
 
