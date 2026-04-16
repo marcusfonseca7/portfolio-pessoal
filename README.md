@@ -44,19 +44,28 @@ Além de servir como apresentação profissional, este projeto representa minha 
 ## 🤔 Como estava antes??
 
 <div align="center">
-<img src="img/print_portfolio_antigo.png" width="300px">
-<img src="img/print_portfolio_antigo2.png" width="300px">
-<img src="img/print_portfolio_antigo3.png" width="300px">
+<img src="img/print_portfolio_antigo.png" width="350px">
+<img src="img/print_portfolio_antigo2.png" width="350px">
+<img src="img/print_portfolio_antigo3.png" width="350px">
 </div>
 
 
 ## 🤩 Como ficou??
 
 <div align="center">
-<img src="img/print_portfolio_novo.png" width="300px">
-<img src="img/print_portfolio_novo2.png" width="300px">
-<img src="img/print_portfolio_novo3.png" width="300px">
-<img src="img/print_portfolio_novo4.png" width="300px">
-<img src="img/print_portfolio_novo5.png" width="300px">
-<img src="img/print_portfolio_novo6.png" width="300px">
+<img src="img/print_portfolio_novo.png" width="400px">
+<img src="img/print_portfolio_novo2.png" width="400px">
+<img src="img/print_portfolio_novo3.png" width="400px">
+<img src="img/print_portfolio_novo4.png" width="400px">
+<img src="img/print_portfolio_novo5.png" width="400px">
+
+<br>
+  <p> Modo Claro: </p>
+<img src="img/print_portfolio_novo6.png" width="400px">
 </div>
+
+
+## 😆 Quer ver funcionando??
+Visite meu post no LinkedIn que contém um vídeo demonstrativo: <a href="https://www.linkedin.com/posts/marcusfonseca7_html-css-javascript-activity-7449963498383663104-5hsW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEtWFbMBOCSeWEax5VMb0NGD5w3cE8VyC0Q"> Vídeo no LinkedIn </a> 
+
+Logo mais estará disponível para acesso...
