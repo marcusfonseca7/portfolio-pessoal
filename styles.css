@@ -56,26 +56,6 @@ img {
   margin: 5px;
 }
 
-.turn-mode {
-  background: none;
-  border: 1px solid var(--cor-principal);
-  color: #fff;
-  margin-left: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 50px;
-  transition: transform ease 0.3s;
-}
-
-.turn-mode:hover {
-  transform: scale(1.1);
-}
-
-.turn-mode img {
-  width: 30px;
-}
-
 /* Linhas horizontais que estão em algumas partes da página, ajudam no visual */
 .hr-l {
   border: solid 3px var(--border-projects);
@@ -130,6 +110,26 @@ img {
   z-index: 1000;
 }
 
+.header__turn-mode {
+  background: none;
+  border: 1px solid var(--cor-principal);
+  color: #fff;
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50px;
+  transition: transform ease 0.3s;
+}
+
+.header__turn-mode img {
+  width: 30px;
+}
+
+.header__turn-mode:hover {
+  transform: scale(1.1);
+}
+
 .header__list {
   display: flex;
   height: 10svh;
@@ -152,7 +152,11 @@ img {
 
 @media (max-width: 800px) {
   .header__ {
-    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  .header__turn-mode:hover {
+    transform: none;
   }
 
   .header__list {
@@ -165,6 +169,7 @@ img {
   .header__list {
     font-size: 0.8rem;
     height: 7svh;
+    gap: 15px;
   }
 }
 
@@ -212,7 +217,7 @@ img {
   display: flex;
   align-items: center;
   justify-items: center;
-  padding: 5px;
+  padding: 5px 0;
   gap: 13px;
 }
 
@@ -271,6 +276,11 @@ img {
   .hero__buttons--button {
     font-size: 0.7rem;
     padding: 7px 10px;
+  }
+
+  .hero__buttons--button:hover {
+    transform: none;
+    background-color: initial;
   }
 
   .hero__buttons--icon {
@@ -397,6 +407,11 @@ figcaption {
   font-size: 1rem;
 }
 
+.text-complete,
+.text-inprogress {
+  padding: 5px;
+}
+
 @media (max-width: 1100px) {
   .about-me__tecnologies--images {
     grid-auto-flow: row;
@@ -439,8 +454,8 @@ figcaption {
 
   .about-me__degrees--images figure {
     padding: 5px;
-    max-width: 30px;
-    min-width: fit-content;
+
+    min-width: 150px;
   }
 
   .text-complete,
@@ -698,6 +713,10 @@ figcaption {
   .projects__buttons--button {
     font-size: 0.7rem;
   }
+
+  .projects__project:hover {
+    transform: none;
+  }
 }
 
 /* -------------------------------------- CONTACT -------------------------------------- */
@@ -734,6 +753,10 @@ figcaption {
 
   .contact__icons {
     width: 40px;
+  }
+
+  .contact__icons:hover {
+    transform: none;
   }
 }
 
