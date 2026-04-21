@@ -42,8 +42,6 @@ body {
     var(--cor1-gradient),
     var(--cor2-gradient)
   );
-
-  transition: background-image 2s ease;
 }
 
 a {
