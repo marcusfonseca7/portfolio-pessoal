@@ -5,7 +5,7 @@
   --cor1-gradient: #130b0b;
   --cor2-gradient: #550000;
   --border-black: #000;
-
+  
   --border-projects: #8d0000;
   --cor1-gradient-projects: #311f1f;
   --cor2-gradient-projects: #3f0000;
@@ -16,7 +16,7 @@
   --cor1-gradient: #181827;
   --cor2-gradient: #00063d;
   --border-black: #000;
-
+  
   --border-projects: #000e8d;
   --cor1-gradient-projects: #1f1f31;
   --cor2-gradient-projects: #00063f;
@@ -42,6 +42,8 @@ body {
     var(--cor1-gradient),
     var(--cor2-gradient)
   );
+
+  transition: background-image 2s ease;
 }
 
 a {
@@ -509,7 +511,8 @@ figcaption {
   margin: 15px;
   transition:
     transform ease 0.5s,
-    width ease 0.5s;
+    width ease 0.5s,
+    ease 0.5s transform;
   position: relative;
 }
 
@@ -524,11 +527,8 @@ figcaption {
   transform: scale(1.05);
 }
 
-.projects__project.reverse {
-  grid-template-columns: 1fr 2fr;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+.projects__project:active {
+  transform: scale(0.9); 
 }
 
 .projects__title {
@@ -546,6 +546,7 @@ figcaption {
   position: absolute;
   transition: left ease 0.5s;
   left: 20px;
+  cursor: pointer;
 }
 
 .projects__description {
@@ -569,14 +570,6 @@ figcaption {
   opacity: 0;
   height: 200px;
   z-index: -1;
-}
-
-.projects__description.reverse {
-  order: -1;
-}
-
-.projects__description--title.reverse {
-  align-self: flex-end;
 }
 
 .projects__buttons {
