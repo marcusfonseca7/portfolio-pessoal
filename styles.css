@@ -5,7 +5,7 @@
   --cor1-gradient: #130b0b;
   --cor2-gradient: #550000;
   --border-black: #000;
-  
+
   --border-projects: #8d0000;
   --cor1-gradient-projects: #311f1f;
   --cor2-gradient-projects: #3f0000;
@@ -16,7 +16,7 @@
   --cor1-gradient: #181827;
   --cor2-gradient: #00063d;
   --border-black: #000;
-  
+
   --border-projects: #000e8d;
   --cor1-gradient-projects: #1f1f31;
   --cor2-gradient-projects: #00063f;
@@ -526,7 +526,7 @@ figcaption {
 }
 
 .projects__project:active {
-  transform: scale(0.9); 
+  transform: scale(0.9);
 }
 
 .projects__title {
@@ -705,8 +705,11 @@ figcaption {
     font-size: 0.7rem;
   }
 
-  .projects__project:hover {
+  .projects__project:hover,
+  .projects__project:active {
     transform: none;
+    -webkit-tap-highlight-color: transparent; 
+    /* quando a imagem é clickada no celular, não pisca em azul  */
   }
 }
 
