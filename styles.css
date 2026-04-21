@@ -510,7 +510,7 @@ figcaption {
   transition:
     transform ease 0.5s,
     width ease 0.5s,
-    ease 0.5s transform;
+    ease 0.3s transform;
   position: relative;
 }
 
@@ -628,6 +628,11 @@ figcaption {
   .projects__project.closed {
     height: fit-content;
   }
+  
+  .projects__project:active {
+    -webkit-tap-highlight-color: transparent; 
+    /* quando a imagem é clickada, não pisca em azul  */
+  }
 
   .projects__description {
     position: relative;
@@ -705,11 +710,8 @@ figcaption {
     font-size: 0.7rem;
   }
 
-  .projects__project:hover,
-  .projects__project:active {
+  .projects__project:hover{
     transform: none;
-    -webkit-tap-highlight-color: transparent; 
-    /* quando a imagem é clickada no celular, não pisca em azul  */
   }
 }
 
