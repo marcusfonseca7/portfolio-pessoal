@@ -526,7 +526,7 @@ figcaption {
 }
 
 .projects__project:active {
-  transform: scale(0.9);
+  transform: scale(1);
 }
 
 .projects__title {
@@ -628,9 +628,9 @@ figcaption {
   .projects__project.closed {
     height: fit-content;
   }
-  
+
   .projects__project:active {
-    -webkit-tap-highlight-color: transparent; 
+    -webkit-tap-highlight-color: transparent;
     /* quando a imagem é clickada, não pisca em azul  */
   }
 
@@ -710,7 +710,7 @@ figcaption {
     font-size: 0.7rem;
   }
 
-  .projects__project:hover{
+  .projects__project:hover {
     transform: none;
   }
 }
