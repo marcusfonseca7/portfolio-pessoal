@@ -620,13 +620,14 @@ figcaption {
 @media (max-width: 1100px) {
   .projects__project {
     flex-direction: column;
-    height: fit-content;
+    height: min-content;
     min-width: fit-content;
     max-width: fit-content;
+    transition: height ease 0.5s;
   }
 
   .projects__project.closed {
-    height: fit-content;
+    height: min-content;
   }
 
   .projects__project:active {
@@ -634,26 +635,37 @@ figcaption {
     /* quando a imagem é clickada, não pisca em azul  */
   }
 
+  .projects__project:hover {
+    transform: none;
+  }
+
   .projects__description {
-    position: relative;
-    left: 0;
+    gap: 10px;
+    position: static;
+    height: 450px;
+    opacity: 1;
+    transition: opacity ease 0.3s, height ease 0.5s;
   }
 
   .projects__description.hidden {
-    transform: translateY(-40%);
+    transform: none;
     height: 0px;
+    opacity: 0;
   }
 
   .projects__image-project {
     width: 500px;
-    position: relative;
-    left: 0;
-    z-index: 1;
+    position: static;
   }
 
   .projects__project.closed .projects__project--click-description {
-    position: relative;
+    position: static;
     align-self: center;
+    min-height: fit-content;
+  }
+
+  .projects__project .projects__project--click-description {
+    max-height: 0;
   }
 
   .projects__description--title {
@@ -700,6 +712,7 @@ figcaption {
 
   .projects__description {
     font-size: 0.8rem;
+    height: 367px;
   }
 
   .projects__description--technologies img {
