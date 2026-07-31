@@ -187,6 +187,19 @@ img {
   border-radius: 1000px;
   border: solid 5px var(--cor-principal);
   transition: transform ease 300ms;
+  animation: floating-animation 4s ease infinite;
+}
+
+@keyframes floating-animation{
+  0%{
+    transform: translateY(0) scale(1);
+  }
+  50%{
+    transform: translateY(+8px) scale(1.02);
+  }
+  100%{
+    transform: translateY(0)scale(1);
+  }
 }
 
 .hero__img img:hover {
