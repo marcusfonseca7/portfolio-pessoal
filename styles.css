@@ -187,6 +187,32 @@ img {
   border-radius: 1000px;
   border: solid 5px var(--cor-principal);
   transition: transform ease 300ms;
+  animation:
+    fade-in-left-animation 1s ease forwards,
+    floating-animation 4s ease infinite 1.2s;
+}
+
+@keyframes fade-in-left-animation{
+  0%{
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floating-animation{
+  0%{
+    transform: translateY(0) scale(1);
+  }
+  50%{
+    transform: translateY(+8px) scale(1.02);
+  }
+  100%{
+    transform: translateY(0)scale(1);
+  }
 }
 
 .hero__img img:hover {
@@ -211,6 +237,18 @@ img {
 
 .hero__title {
   font-size: 3rem;
+  animation: fade-in-right-animation 1s ease forwards
+}
+
+@keyframes fade-in-right-animation{
+  0%{
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .hero__buttons {
