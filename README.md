@@ -5,6 +5,13 @@ Este projeto é a atualização do meu portfólio pessoal, originalmente desenvo
 
 Com a evolução dos meus conhecimentos em desenvolvimento web, estou reformulando completamente a estrutura, o design e as boas práticas aplicadas, buscando um resultado mais profissional, organizado e moderno.
 
+## 😆 Veja Funcionando
+🔗 Acesse: <a href="https://marcusfonseca7.github.io/portfolio-pessoal/">Portfólio</a>
+
+Visite meu post no LinkedIn que contém um vídeo demonstrativo: <a href="https://www.linkedin.com/posts/marcusfonseca7_html-css-javascript-activity-7449963498383663104-5hsW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEtWFbMBOCSeWEax5VMb0NGD5w3cE8VyC0Q"> Vídeo no LinkedIn </a> 
+
+
+
 ## 🚀 Tecnologias Utilizadas
 
 - <p> <img src="https://skillicons.dev/icons?i=html" /> </p>
@@ -63,9 +70,3 @@ Além de servir como apresentação profissional, este projeto representa minha 
   <p> Modo Claro: </p>
 <img src="img/print_portfolio_novo6.png" width="400px">
 </div>
-
-
-## 😆 Quer ver funcionando??
-Visite meu post no LinkedIn que contém um vídeo demonstrativo: <a href="https://www.linkedin.com/posts/marcusfonseca7_html-css-javascript-activity-7449963498383663104-5hsW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEtWFbMBOCSeWEax5VMb0NGD5w3cE8VyC0Q"> Vídeo no LinkedIn </a> 
-
-Acesse: https://marcusfonseca7.github.io/portfolio-pessoal/
