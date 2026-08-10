@@ -1,17 +1,6 @@
 /* VÁRIAVEL DE COR */
 
 :root {
-  --cor-principal: #ca0000;
-  --cor1-gradient: #130b0b;
-  --cor2-gradient: #550000;
-  --border-black: #000;
-
-  --border-projects: #8d0000;
-  --cor1-gradient-projects: #311f1f;
-  --cor2-gradient-projects: #3f0000;
-}
-
-.light {
   --cor-principal: #0017e2;
   --cor1-gradient: #181827;
   --cor2-gradient: #00063d;
@@ -20,6 +9,17 @@
   --border-projects: #000e8d;
   --cor1-gradient-projects: #1f1f31;
   --cor2-gradient-projects: #00063f;
+}
+
+.light {
+  --cor-principal: #ca0000;
+  --cor1-gradient: #130b0b;
+  --cor2-gradient: #550000;
+  --border-black: #000;
+
+  --border-projects: #8d0000;
+  --cor1-gradient-projects: #311f1f;
+  --cor2-gradient-projects: #3f0000;
 }
 
 /* -------------------------------------- RESET -------------------------------------- */
@@ -44,6 +44,30 @@ body {
   );
 }
 
+/* Tags das partículas - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 a {
   text-decoration: none;
   color: inherit;
@@ -192,26 +216,26 @@ img {
     floating-animation 4s ease infinite 1.2s;
 }
 
-@keyframes fade-in-left-animation{
-  0%{
+@keyframes fade-in-left-animation {
+  0% {
     opacity: 0;
     transform: translateX(-300px);
   }
-  100%{
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
-@keyframes floating-animation{
-  0%{
+@keyframes floating-animation {
+  0% {
     transform: translateY(0) scale(1);
   }
-  50%{
+  50% {
     transform: translateY(+8px) scale(1.02);
   }
-  100%{
-    transform: translateY(0)scale(1);
+  100% {
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -237,15 +261,15 @@ img {
 
 .hero__title {
   font-size: 3rem;
-  animation: fade-in-right-animation 1s ease forwards
+  animation: fade-in-right-animation 1s ease forwards;
 }
 
-@keyframes fade-in-right-animation{
-  0%{
+@keyframes fade-in-right-animation {
+  0% {
     opacity: 0;
     transform: translateX(300px);
   }
-  100%{
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
@@ -592,7 +616,7 @@ figcaption {
   padding: 7px;
   gap: 5px;
   text-align: justify;
-  font-size: .95rem;
+  font-size: 0.95rem;
   width: 380px;
   height: min-content;
   transition:
