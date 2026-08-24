@@ -154,6 +154,11 @@ img {
   transform: scale(1.1);
 }
 
+.header__turn-mode:focus-visible {
+  transform: scale(1.2);
+  outline: none;
+}
+
 .header__list {
   display: flex;
   height: 10svh;
@@ -168,10 +173,19 @@ img {
 
 .header__list li {
   transition: transform ease 200ms;
+  border: 2px solid transparent;
+  outline: none;
 }
 
 .header__list li:hover {
   transform: scale(1.2);
+}
+
+.header__list li a:focus-visible {
+  border: var(--border-projects) 2px solid;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 @media (max-width: 800px) {
@@ -243,6 +257,10 @@ img {
   transform: scale(1.1);
 }
 
+.hero__img a:focus-visible {
+  outline: none;
+}
+
 .hero__text {
   display: flex;
   flex-direction: column;
@@ -305,6 +323,11 @@ img {
   color: #f9f9f9de;
   background-color: var(--cor-principal);
   transform: scale(110%);
+}
+
+.hero__buttons--button:focus-visible {
+  outline: none;
+  transform: scale(1.2);
 }
 
 .hero__buttons--icon {
@@ -444,6 +467,11 @@ img {
 }
 
 figure:hover {
+  transform: scale(1.14);
+}
+
+figure:focus {
+  outline: none;
   transform: scale(1.14);
 }
 
